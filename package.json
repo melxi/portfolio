@@ -1,16 +1,19 @@
 {
   "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Responsive portfolio website",
   "main": "gulpfile.js",
+  "homepage": "https://melxi.github.io/portfolio",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d app"
   },
   "keywords": [],
-  "author": "",
+  "author": "Muhammad Melxi",
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.26.3",
+    "gh-pages": "^2.0.1",
     "gulp": "^3.9.1",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
