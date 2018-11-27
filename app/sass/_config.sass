@@ -23,6 +23,13 @@ $background-opacity: 0.9
 			z-index: -1
 			background: rgba($primary-color, $background-opacity)
 
+// Set Text Color
+@function set-text-color($color)
+	@if (lightness($color) > 40)
+		@return #000000
+	@else
+		@return #ffffff
+
 // Media Query Mixins
 @mixin mediaSm
 	@media screen and (max-width: 500px)
